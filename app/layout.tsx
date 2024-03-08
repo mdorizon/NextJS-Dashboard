@@ -9,8 +9,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>
-      <title>React | NextJS Training</title>
-      <meta name="description" content="Wakusay React | NextJS Training APP" />
+      <title>NextJS Dashboard</title>
+      <meta name="description" content="Wakusay NextJS Training DashBoard" />
     </html>
   );
 }
