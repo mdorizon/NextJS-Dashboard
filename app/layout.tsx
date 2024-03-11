@@ -1,5 +1,15 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'NextJS Dashboard',
+  },
+  description: 'Wakusay NextJS Training DashBoard.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
 
 export default function RootLayout({
   children,
@@ -9,8 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>
-      <title>NextJS Dashboard</title>
-      <meta name="description" content="Wakusay NextJS Training DashBoard" />
     </html>
   );
 }
