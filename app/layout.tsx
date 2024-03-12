@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | Acme Dashboard',
     default: 'NextJS Dashboard',
   },
-  description: 'Wakusay NextJS Training DashBoard.',
+  description: 'Wakusay NextJS Training DashBoard with login.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
